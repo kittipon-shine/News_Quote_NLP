@@ -13128,7 +13128,6 @@ div#notebook {
 
 <span class="kn">import</span> <span class="nn">nltk</span>
 <span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
-<span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
 
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span>
 <span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">StratifiedKFold</span>
@@ -14757,7 +14756,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;datastore/AllArticles_OnlyContent.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="c1">#ตรวจสอบจำนวนบรรทัด</span>
@@ -14791,7 +14790,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[148]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">raw_documents</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1">#เรียกดูข้อมูลตัวแรกที่อ่านมา</span>
@@ -14807,7 +14806,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[148]:</div>
+    <div class="prompt output_prompt">Out[3]:</div>
 
 
 
@@ -14824,7 +14823,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[149]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;target/category.txt&quot;</span><span class="p">,</span><span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="c1">#ตรวจสอบจำนวนบรรทัด</span>
@@ -14865,7 +14864,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[150]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#สร้าง dataframe จากข้อมูลที่ดึงเข้ามา</span>
@@ -14884,7 +14883,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[150]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -14981,7 +14980,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[151]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#นับจำนวนแต่ละ target แล้วเก็บไว้ที่ตัวแปร y_axis</span>
@@ -14999,7 +14998,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[151]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -15019,7 +15018,7 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[152]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#เก็บ target ไว้ที่ตัวแปร x_axis</span>
@@ -15037,7 +15036,7 @@ Name: target, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[152]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -15054,7 +15053,7 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[153]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#plot กราฟเพื่อดูว่าข้อมูล imbalance ไหม</span>
@@ -15071,7 +15070,7 @@ Name: target, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[153]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -15119,10 +15118,10 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[154]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">raw_documents</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># X_train, X_test, y_train, y_test = train_test_split(raw_documents, y, test_size=0.2, random_state=42) </span>
 <span class="c1">#แบ่งข้อมูลเป็น 2 ส่วน train 80% test 20%</span>
 </pre></div>
 
@@ -15133,7 +15132,7 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[155]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Tokenizer and WordNet Lemmatizer with POS (part of speech)</span>
@@ -15185,7 +15184,7 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[156]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">lemma_tokenizer_w_pos_tag</span><span class="p">(</span><span class="s1">&#39;amplifying&#39;</span><span class="p">)</span>
@@ -15201,7 +15200,7 @@ Name: target, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[156]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -15218,7 +15217,7 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[324]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#ใช้ TfidfVectorizer() แทน CountVectorizer() และ TfidfTransformer()</span>
@@ -15233,7 +15232,7 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[325]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Term weighting ใน Scikit-learn เราสามารถสร้างที่ TF-IDF weighted document-term matrix โดยใช้ TfidfVectorizer() แทน CountVectorizer()</span>
@@ -15265,7 +15264,7 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[239]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">accuracy_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span> <span class="c1">#สร้าง dict ชื่อ accuracy_dict เพื่อรอรับค่า accuracy</span>
@@ -15289,12 +15288,25 @@ Name: target, dtype: int64</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>ทำการ transform raw documents โดยจะแบ่งเป็น 2 แบบคือ non_weight และ weight</p>
+<ul>
+<li>non_weight จะเก็บไว้ที่ตัวแปร non_weight_raw_documents</li>
+<li>weight จะเก็บไว้ที่ตัวแปร weight_raw_documents</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[160]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">non_weight_raw_documents</span> <span class="o">=</span> <span class="n">non_weight</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">raw_documents</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># transform raw documents เก็บไว้ที่ตัวแปร non_weight_raw_documents</span>
+<span class="n">non_weight_raw_documents</span> <span class="o">=</span> <span class="n">non_weight</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">raw_documents</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15304,10 +15316,11 @@ Name: target, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[161]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">weight_raw_documents</span> <span class="o">=</span> <span class="n">weight</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">raw_documents</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># transform raw documents เก็บไว้ที่ตัวแปร weight_raw_documents</span>
+<span class="n">weight_raw_documents</span> <span class="o">=</span> <span class="n">weight</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">raw_documents</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15318,7 +15331,8 @@ Name: target, dtype: int64</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="GridSearchCV-Function">GridSearchCV Function<a class="anchor-link" href="#GridSearchCV-Function">&#182;</a></h1>
+<h1 id="GridSearchCV-Function">GridSearchCV Function<a class="anchor-link" href="#GridSearchCV-Function">&#182;</a></h1><p>สร้าง Function ที่ใช้ในการทำ hyperparameter tuning</p>
+
 </div>
 </div>
 </div>
@@ -15327,13 +15341,13 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[184]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tuning_params</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">params</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tuning_params</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">params</span><span class="p">):</span> <span class="c1">#รับค่าเป็น model และ params ที่จะทำการ tune</span>
     <span class="n">folds</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1">#กำหนด fold ที่จะใช้ในการทำ K-fold</span>
-    <span class="n">skf</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="n">folds</span><span class="p">,</span> <span class="n">shuffle</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">1001</span><span class="p">)</span> <span class="c1">#ทำการกำหนดเครื่องมือ K-fold ว่าจะใช้ 5 folds โดย StratifiedKFold เป็นการแบ่งข้อมูลรูปแบบหนึ่ง</span>
+    <span class="n">skf</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="n">folds</span><span class="p">,</span> <span class="n">shuffle</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span> <span class="o">=</span> <span class="mi">1001</span><span class="p">)</span> <span class="c1">#ทำการกำหนดเครื่องมือ K-fold ว่าจะใช้ 3 folds โดย StratifiedKFold เป็นการแบ่งข้อมูลรูปแบบหนึ่ง</span>
     <span class="c1">#เอา Classifier, params ใส่ลงไปและ กำหนด cv ด้วย k-flod ที่เรากำหนดไว้ในตัวแปร skf</span>
     <span class="n">grid</span> <span class="o">=</span> <span class="n">GridSearchCV</span><span class="p">(</span><span class="n">model</span><span class="p">,</span> <span class="n">params</span><span class="p">,</span> <span class="n">verbose</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">skf</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span><span class="n">y_train</span><span class="p">),</span> <span class="n">n_jobs</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">grid</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1">#เอา GridSearchCV มา fit กับ train set</span>
-    <span class="k">return</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">grid</span><span class="o">.</span><span class="n">best_params_</span><span class="p">)</span> <span class="c1">#คืนค่า hyperparameter ที่ดีที่สุดกลับไป</span>
 </pre></div>
 
     </div>
@@ -15402,7 +15416,7 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[187]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">knn_non_weight</span><span class="o">=</span><span class="n">KNeighborsClassifier</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">knn_non_weight</span><span class="o">=</span><span class="n">KNeighborsClassifier</span><span class="p">()</span> <span class="c1">#เรียกใช้ KNN</span>
 </pre></div>
 
     </div>
@@ -15415,8 +15429,8 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[188]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">knn_non_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">knn_non_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
-<span class="n">knn_non_weight_best_params</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">knn_non_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">knn_non_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="c1">#ทำ hyperparameter tuning</span>
+<span class="n">knn_non_weight_best_params</span> <span class="c1">#แสดงผลที่ได้กลับมา</span>
 </pre></div>
 
     </div>
@@ -15491,8 +15505,8 @@ Name: target, dtype: int64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># กำหนด parameter ตามที่หาได้</span>
-<span class="n">knn_non_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">knn_non_weight_best_params</span><span class="p">)</span>
-<span class="n">knn_non_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">knn_non_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">knn_non_weight_best_params</span><span class="p">)</span> <span class="c1">#ทำการ set hyperparameter ที่ได้จากการทำ gridsearchcv</span>
+<span class="n">knn_non_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1">#ทำการ fit model</span>
 </pre></div>
 
     </div>
@@ -15678,7 +15692,7 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[195]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">knn_weight</span><span class="o">=</span><span class="n">KNeighborsClassifier</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">knn_weight</span><span class="o">=</span><span class="n">KNeighborsClassifier</span><span class="p">()</span> <span class="c1">#เรียกใช้ KNN</span>
 </pre></div>
 
     </div>
@@ -15691,8 +15705,8 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[196]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">knn_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">knn_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
-<span class="n">knn_weight_best_params</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">knn_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">knn_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="c1">#ทำ hyperparameter tuning </span>
+<span class="n">knn_weight_best_params</span> <span class="c1">#แสดงผลที่ได้กลับมา</span>
 </pre></div>
 
     </div>
@@ -15767,8 +15781,8 @@ Name: target, dtype: int64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># กำหนด parameter ตามที่หาได้</span>
-<span class="n">knn_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">knn_weight_best_params</span><span class="p">)</span>
-<span class="n">knn_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">knn_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">knn_weight_best_params</span><span class="p">)</span> <span class="c1">#ทำการ set hyperparameter ที่ได้จากการทำ gridsearchcv</span>
+<span class="n">knn_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1">#ทำการ fit model</span>
 </pre></div>
 
     </div>
@@ -15990,8 +16004,8 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[205]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xgb_non_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">xgb_non_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
-<span class="n">xgb_non_weight_best_params</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xgb_non_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">xgb_non_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="c1">#ทำ hyperparameter tuning </span>
+<span class="n">xgb_non_weight_best_params</span> <span class="c1">#แสดงผลที่ได้กลับมา </span>
 </pre></div>
 
     </div>
@@ -16071,8 +16085,8 @@ Name: target, dtype: int64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># กำหนด parameter ตามที่หาได้</span>
-<span class="n">xgb_non_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">xgb_non_weight_best_params</span><span class="p">)</span>
-<span class="n">xgb_non_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">xgb_non_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">xgb_non_weight_best_params</span><span class="p">)</span> <span class="c1">#ทำการ set hyperparameter ที่ได้จากการทำ gridsearchcv</span>
+<span class="n">xgb_non_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1">#ทำการ fit model</span>
 </pre></div>
 
     </div>
@@ -16267,8 +16281,8 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[214]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xgb_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">xgb_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
-<span class="n">xgb_weight_best_params</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">xgb_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">xgb_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="c1">#ทำ hyperparameter tuning </span>
+<span class="n">xgb_weight_best_params</span> <span class="c1">#แสดงผลที่ได้กลับมา </span>
 </pre></div>
 
     </div>
@@ -16348,8 +16362,8 @@ Name: target, dtype: int64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># กำหนด parameter ตามที่หาได้</span>
-<span class="n">xgb_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">xgb_weight_best_params</span><span class="p">)</span>
-<span class="n">xgb_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">xgb_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">xgb_weight_best_params</span><span class="p">)</span> <span class="c1">#ทำการ set hyperparameter ที่ได้จากการทำ gridsearchcv</span>
+<span class="n">xgb_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1">#ทำการ fit model</span>
 </pre></div>
 
     </div>
@@ -16504,19 +16518,6 @@ Name: target, dtype: int64</pre>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16591,8 +16592,8 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[224]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rf_non_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">rf_non_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
-<span class="n">rf_non_weight_best_params</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rf_non_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">rf_non_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="c1">#ทำ hyperparameter tuning </span>
+<span class="n">rf_non_weight_best_params</span> <span class="c1">#แสดงผลที่ได้กลับมา </span>
 </pre></div>
 
     </div>
@@ -16670,8 +16671,8 @@ Name: target, dtype: int64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># กำหนด parameter ตามที่หาได้</span>
-<span class="n">rf_non_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">rf_non_weight_best_params</span><span class="p">)</span>
-<span class="n">rf_non_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">rf_non_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">rf_non_weight_best_params</span><span class="p">)</span> <span class="c1">#ทำการ set hyperparameter ที่ได้จากการทำ gridsearchcv</span>
+<span class="n">rf_non_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1">#ทำการ fit model</span>
 </pre></div>
 
     </div>
@@ -16858,8 +16859,8 @@ Name: target, dtype: int64</pre>
 <div class="prompt input_prompt">In&nbsp;[232]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rf_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">rf_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span>
-<span class="n">rf_weight_best_params</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">rf_weight_best_params</span> <span class="o">=</span> <span class="n">tuning_params</span><span class="p">(</span><span class="n">rf_weight</span><span class="p">,</span> <span class="n">params</span><span class="p">)</span> <span class="c1">#ทำ hyperparameter tuning </span>
+<span class="n">rf_weight_best_params</span> <span class="c1">#แสดงผลที่ได้กลับมา </span>
 </pre></div>
 
     </div>
@@ -16947,8 +16948,8 @@ Name: target, dtype: int64</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># กำหนด parameter ตามที่หาได้</span>
-<span class="n">rf_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">rf_weight_best_params</span><span class="p">)</span>
-<span class="n">rf_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">rf_weight</span><span class="o">.</span><span class="n">set_params</span><span class="p">(</span><span class="o">**</span><span class="n">rf_weight_best_params</span><span class="p">)</span> <span class="c1">#ทำการ set hyperparameter ที่ได้จากการทำ gridsearchcv</span>
+<span class="n">rf_weight</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span> <span class="c1">#ทำการ fit model</span>
 </pre></div>
 
     </div>
